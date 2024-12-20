@@ -4,7 +4,7 @@
       <div class="Time">
         <p class="time-clock">09:41</p>
         <div class="display-screen">
-          <img class="signal" src="../img/Mobile Signal.png" alt="" />
+
           <img class="wifi" src="../img/Wifi.png" alt="" />
           <img class="battery" src="../img/Battery.png" alt="" />
         </div>
