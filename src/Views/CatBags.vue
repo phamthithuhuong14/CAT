@@ -24,17 +24,13 @@
 
     <div class="ticket-number">
       <h3 class="ticket-label">Ticket:</h3>
-      <p class="ticket-amount">2</p>
+      <p class="ticket-amount">1</p>
     </div>
 
-    <div class="ticket-point">
-      <img src="../img/ticket-image-black.svg"></img>
-      <img class="Vector" src="../img/Vector.svg" alt="">
-      <div class="point-circle">
-            <p>4.000</p>
-            <p>POINT</p>
-        </div>
+    <div class="ticket-image">
       <img src="../img/ticket-image-yellow.svg" alt="" />
+      <img src="../img/ticket-image-white.svg" alt="" />
+      <img src="../img/ticket-image-black.svg" alt="" />
     </div>
   </div>
 </template>
@@ -53,7 +49,7 @@
   .header {
     display: flex;
     justify-content: flex-start;
-    width: 90%;
+    width: 100%;
     margin-top: 57px;
     margin-left: 16px;
     gap: 16px;
@@ -95,7 +91,7 @@
     font-family: Irish Grover;
     font-size: 35px;
     font-weight: 400;
-    line-height: 29.02px;
+    line-height: 29px;
     text-align: left;
   }
 
@@ -106,32 +102,18 @@
     line-height: 29.02px;
   }
 
-  .ticket-point {
-    display: flex;
+  .ticket-image {
     margin-top: 40%;
-    justify-content: center;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 1%;
+    width: 100%;
+    height: 130px;
   }
 
-  .ticket-point img {
+  .ticket-image img {
     width: 214px;
     height: 174px;
-  }
-
-  .Vector {
-    position: relative;
-    
-  }
-
-  .point-circle {
-    position: absolute;
-    font-family: Irish Grover;
-    font-size: 31px;
-    font-weight: 400;
-    line-height: 19.34px;
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-    margin-top: 21px;
   }
 }
 </style>

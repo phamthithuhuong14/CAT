@@ -1,17 +1,21 @@
 <template>
-  <div class="main">
-    <div class="Time">
-      <p class="time-clock">09:41</p>
-      <div class="display-screen">
-        <img class="signal" src="../img/Mobile Signal.png" alt="">
-        <img class="wifi" src="../img/Wifi.png" alt="">
-        <img class="battery" src="../img/Battery.png" alt="">
-
+  <div class="container">
+    <div class="main">
+      <div class="Time">
+        <p class="time-clock">09:41</p>
+        <div class="display-screen">
+          <img class="signal" src="../img/Mobile Signal.png" alt="" />
+          <img class="wifi" src="../img/Wifi.png" alt="" />
+          <img class="battery" src="../img/Battery.png" alt="" />
+        </div>
       </div>
-    </div>
-    <div class="loader-container">
-      <img src="../img/Asset 1.png" alt="" class="cat-hi" />
-      <img src="../img/Asset 2.png" alt="" class="cat-image" />
+      <div class="loader-container">
+        <img src="../img/Asset 2.png" alt="" class="cat-image" />
+
+        <div class="cat-hi">
+          <img src="../img/hi.svg" alt="" />
+        </div>
+      </div>
 
       <div>
         <p class="loading-text">Loading...</p>
@@ -24,17 +28,23 @@
   </div>
 </template>
 
-  
-
 <style scoped>
 @media screen and (max-width: 700px) {
+  .container {
+    background: rgba(255, 249, 233, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 213vh;
+  }
   .main {
     background: rgba(255, 249, 233, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 820px;
+    /* height: 193vh; */
   }
 
   .Time {
@@ -44,45 +54,44 @@
 
   .time-clock {
     color: rgba(0, 0, 0, 1);
+  }
 
-    }
+  .display-screen {
+    display: flex;
+    gap: 5px;
+    margin-top: 17px;
+    margin-left: 307px;
+  }
 
-    .display-screen{
-      display: flex;
-      gap: 5px;
-      margin-top: 17px;
-      margin-left: 307px;
-    }
-
-    .display-screen img {
-      width: 17px;
-      height: 12px;
-    }
-
+  .display-screen img {
+    width: 17px;
+    height: 12px;
+  }
 
   .loader-container {
     display: flex;
-    flex-direction: column;
+
     align-items: center;
-     justify-content: center; 
+    justify-content: center;
     width: 100%;
-    height: 820px; 
-   } 
+    height: 820px;
+  }
 
   .cat-container {
     display: flex;
   }
 
-  .cat-hi {
-    width: 39px;
-    height: 39px;
-    margin-left: 272px;
+  .cat-hi img {
+    width: 100%;
+    margin-bottom: 79px;
+    margin-right: 101px;
   }
 
   .cat-image {
-    width: 217px;
-    height: 108px;
-    margin-top: 319px;
+    width: 70%;
+    height: auto;
+    margin-top: 30%;
+    margin-left: 24%;
   }
 
   .loading-bar-container {
@@ -103,10 +112,10 @@
   }
   .loading-text {
     color: rgba(99, 19, 19, 1);
-    font-size: 13px;
+    font-size: 32px;
     font-family: Irish Grover;
     font-weight: 400;
-    margin-top: 266px;
+    margin-top: 346px;
   }
 }
 </style>

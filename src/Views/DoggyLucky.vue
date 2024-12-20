@@ -24,17 +24,22 @@
 
     <div class="ticket-number">
       <h3 class="ticket-label">Ticket:</h3>
-      <p class="ticket-amount">2</p>
+      <p class="ticket-amount">3</p>
     </div>
 
-    <div class="ticket-point">
-      <img src="../img/ticket-image-black.svg"></img>
-      <img class="Vector" src="../img/Vector.svg" alt="">
-      <div class="point-circle">
-            <p>4.000</p>
-            <p>POINT</p>
+    <div class="ticket-image">
+      <div class="doggy-image">
+        <img src="../img/doggy.svg" alt="" />
+        <p>10.000 DOGS</p>
+      </div>
+      <div class="ticket-image">
+        <div class="ticket-imgblack">
+          <img src="../img/ticket-image-black.svg" alt="" />
         </div>
-      <img src="../img/ticket-image-yellow.svg" alt="" />
+        <div class="ticket-imgyellow">
+          <img src="../img/ticket-image-yellow.svg" alt="" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -53,7 +58,7 @@
   .header {
     display: flex;
     justify-content: flex-start;
-    width: 90%;
+    width: 100%;
     margin-top: 57px;
     margin-left: 16px;
     gap: 16px;
@@ -95,7 +100,7 @@
     font-family: Irish Grover;
     font-size: 35px;
     font-weight: 400;
-    line-height: 29.02px;
+    line-height: 29px;
     text-align: left;
   }
 
@@ -106,32 +111,36 @@
     line-height: 29.02px;
   }
 
-  .ticket-point {
+  .ticket-image {
     display: flex;
-    margin-top: 40%;
+    align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 20px;
+    margin-top: 30%;
   }
 
-  .ticket-point img {
+  .doggy-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+  }
+
+  .doggy-image img {
+    width: 214px;
+    height: 174px;
+  }
+  
+  .doggy-image p {
+    font-family: Irish Grover;
+    margin-top: 2px;
+    font-size: 25px;
+  }
+  .ticket-image img {
     width: 214px;
     height: 174px;
   }
 
-  .Vector {
-    position: relative;
-    
-  }
-
-  .point-circle {
-    position: absolute;
-    font-family: Irish Grover;
-    font-size: 31px;
-    font-weight: 400;
-    line-height: 19.34px;
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-    margin-top: 21px;
-  }
+  
 }
 </style>

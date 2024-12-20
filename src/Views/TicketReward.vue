@@ -21,35 +21,47 @@
         <span class="user-name">Konkuviti</span>
       </div>
     </div>
-    <div class="content">
-      <h1 class="day-number">1</h1>
-      <p class="day-label">Day</p>
-      <div class="reward-box">
-        <span class="reward-label">Reward:</span>
-        <span class="reward-amount"> 3 </span>
+
+    <div class="ticket-number">
+      <h3 class="ticket-label">Ticket:</h3>
+      <p class="ticket-amount">2</p>
+    </div>
+
+    <div class="ticket">
+
+      <div class="ticket-point">
+        <img src="../img/Vector-image-white.svg"></img>
+        <img class="Vector" src="../img/Vector.svg" alt="">
+        <div class="point-circle">
+            <p>4.000</p>
+            <p>POINT</p>
+        </div>
+        <img src="../img/Vector-image-yellow.svg" alt="" />
       </div>
-      <button class="open-button">Open</button>
+      
+        <button class="open-button">Open again</button>
     </div>
   </div>
 </template>
 
 <style scoped>
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .daily-reward-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: flex-start;
     width: 700px;
     height: 114vh;
     background: rgba(255, 249, 233, 1);
-
   }
   .header {
     display: flex;
     justify-content: flex-start;
-    width: 90%;
+    width: 100%;
     margin-top: 57px;
+    margin-left: 16px;
+    gap: 16px;
   }
   .user-info {
     display: flex;
@@ -77,68 +89,60 @@
     font-family: Irish Grover;
     font-size: 26px;
   }
-  .content {
+
+  .ticket-number {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px;
+    gap: 16px;
+    margin-left: 16px;
   }
 
-  .day-number {
-    font-size: 120px;
-    font-weight: 400;
-    font-family: Irish Grover;
-    color: rgba(99, 18, 18, 1);
-    margin: 0;
-  }
-
-  .day-label {
-    font-size: 40px;
-    color: rgba(99, 18, 18, 1);
-    margin: 0;
-    margin-bottom: 1.5rem;
-    font-family: Irish Grover;
-    font-weight: 400;
-  }
-
-  .reward-box {
-    padding: 10px 20px;
-    border-radius: 60px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    width: 232px;
-    height: 60px;
-    border-top-width: 2px;
-    border-right-width: 1px;
-    border-bottom-width: 2px;
-    border-left-width: 1px;
-    border-style: solid;
-    border-color: rgba(41, 9, 9, 1);
-    display: flex;
-  }
-
-  .reward-label {
+  .ticket-label {
     font-family: Irish Grover;
     font-size: 35px;
     font-weight: 400;
     line-height: 29.02px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    margin-left: 44px;
-    margin-top: 8%;
+    text-align: left;
   }
 
-  .reward-amount {
+  .ticket-amount {
     font-family: Irish Grover;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 400;
     line-height: 29.02px;
+  }
+
+  .ticket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ticket-point {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .ticket-point img {
+    width: 214px;
+    height: 174px;
+  }
+
+  .Vector {
+    position: relative;
+    
+  }
+
+  .point-circle {
+    position: absolute;
+    font-family: Irish Grover;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 19.34px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(99, 18, 18, 1);
-    margin-top: 8%;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 21px;
   }
 
   button {
@@ -158,18 +162,18 @@
     border-left-width: 2px;
     border-style: solid;
     border-color: rgba(99, 18, 18, 1);
-
-
+    margin-top: 80%;
   }
 
   .open-button {
     font-family: Irish Grover;
-    font-size: 39px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 29.02px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
+
 }
 </style>

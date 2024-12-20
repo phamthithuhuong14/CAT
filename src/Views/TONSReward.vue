@@ -24,14 +24,24 @@
 
     <div class="ticket-number">
       <h3 class="ticket-label">Ticket:</h3>
-      <p class="ticket-amount">3</p>
+      <p class="ticket-amount">0</p>
     </div>
 
     <div class="ticket-image">
-      <img src="../img/ticket-image-white.svg" alt="" />
-      <img src="../img/ticket-image-black.svg" alt="" />
-      <img src="../img/ticket-image-yellow.svg" alt="" />
+      <div class="ton">
+        <img src="../img/ton2.svg" alt="" />
+        <p>0.3 TON</p>
+      </div>
+      <div class="ton">
+        <img src="../img/ton2.svg" alt="" />
+        <p>0.2 TON</p>
+      </div>
+      <div class="ton">
+        <img src="../img/ton.svg" alt="" />
+        <p>0.5 TON</p>
+      </div>
     </div>
+    <button class="open-button">Close</button>
   </div>
 </template>
 
@@ -42,13 +52,14 @@
     flex-direction: column;
     /* align-items: center; */
     justify-content: flex-start;
-    height: 100vh;
+    width: 700px;
+    height: 114vh;
     background: rgba(255, 249, 233, 1);
   }
   .header {
     display: flex;
     justify-content: flex-start;
-    width: 90%;
+    width: 100%;
     margin-top: 57px;
     margin-left: 16px;
     gap: 16px;
@@ -77,7 +88,7 @@
   .user-name {
     color: rgba(99, 18, 18, 1);
     font-family: Irish Grover;
-    font-size: 16px;
+    font-size: 26px;
   }
 
   .ticket-number {
@@ -88,26 +99,25 @@
 
   .ticket-label {
     font-family: Irish Grover;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 400;
-    line-height: 29.02px;
+    line-height: 29px;
     text-align: left;
   }
 
   .ticket-amount {
     font-family: Irish Grover;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 400;
     line-height: 29.02px;
   }
 
   .ticket-image {
-    margin-top: 200px;
-    gap: 16px;
+    margin-top: 40%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-left: 25%;
-    width: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 1%;
+    width: 100%;
     height: 130px;
   }
 
@@ -115,5 +125,48 @@
     width: 100.28px;
     height: 131px;
   }
+
+  .ton img {
+    width: 214px;
+    height: 174px;
+  }
+
+  .ton p {
+    font-family: Irish Grover;
+    margin-left: 27%;
+    font-size: 25px;
+  }
+
+  button {
+    background-color: #cd796b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 300px;
+    height: 64px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 4px;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: rgba(99, 18, 18, 1);
+    margin-top: 80%;
+    margin-left: 26%;
+  }
+
+  .open-button {
+    font-family: Irish Grover;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 29.02px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+
 }
 </style>
