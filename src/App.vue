@@ -43,18 +43,18 @@ import RewardConfirmation from "./Views/RewardConfirmation.vue";
   </main>
 
   <nav>
-    <router-link to="/"></router-link>
-    <router-link to="/daily"></router-link>
-    <router-link to="/ticketinventory"></router-link>
-    <router-link to="/ticketpoint"></router-link>
-    <router-link to="/reward"></router-link>
-    <router-link to="/lucky"></router-link>
-    <router-link to="/doggy"></router-link>
-    <router-link to="/dogsreward"></router-link>
-    <router-link to="/catbags"></router-link>
-    <router-link to="/tonreward"></router-link>
-    <router-link to="/tonsreward"></router-link>
-    <router-link to="/rewardconfirm"></router-link>
+    <router-link to="/"></router-link> |
+    <router-link to="/daily"></router-link> |
+    <router-link to="/ticketinventory"></router-link> |
+    <router-link to="/ticketpoint"></router-link> |
+    <router-link to="/reward"></router-link> |
+    <router-link to="/lucky"></router-link>|
+    <router-link to="/doggy"></router-link>|
+    <router-link to="/dogsreward"></router-link>|
+    <router-link to="/catbags"></router-link>|
+    <router-link to="/tonreward"></router-link>|
+    <router-link to="/tonsreward"></router-link>|
+    <router-link to="/rewardconfirm"></router-link>|
   </nav>
   <router-view></router-view>
 </template>
