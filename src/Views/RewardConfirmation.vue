@@ -50,16 +50,61 @@
         <p>0.50</p>
         <img src="../img/Ton.svg" alt="" />
       </div>
+      <button @click="showModal" class="claim-button">Claim</button>
+    </div>
+
+    
+    <div v-if="isModalVisible" class="modal-overlay">
+      <div class="modal-content">
+        <img src="../img/Cat-image.svg" alt="Sad Cat" class="modal-image" />
+        <p class="error-text">You have an insufficient balance</p>
+        <p class="error-text2">To-up your balance by at least 0.2 TON</p>
+        <button @click="closeModal" class="modal-close-button">X</button>
+      </div>
     </div>
   </div>
 </template>
 
+<script>
+import { ref } from "vue";
+
+export default {
+  setup() {
+    const isModalVisible = ref(false);
+
+    const showModal = () => {
+      isModalVisible.value = true;
+    };
+
+    const closeModal = () => {
+      isModalVisible.value = false;
+    };
+
+    return {
+      isModalVisible,
+      showModal,
+      closeModal,
+    };
+  },
+};
+</script>
+
 <style scoped>
 @media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 700px;
+    height: 211vh;
+    background: rgba(255, 249, 233, 1);
+  }
+
   .user-info {
     display: flex;
     align-items: center;
   }
+
   .user-icon {
     font-size: 20px;
     margin-right: 5px;
@@ -81,15 +126,6 @@
     color: rgba(99, 18, 18, 1);
     font-family: Irish Grover;
     font-size: 16px;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: flex-start;
-    width: 700px;
-    height: 114vh;
-    background: rgba(255, 249, 233, 1);
   }
 
   .header {
@@ -164,7 +200,7 @@
 
   .cat-image {
     width: 70%;
-    height: 200%;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,7 +225,7 @@
     height: 287px;
     border: 1px solid;
     border-radius: 60px;
-    margin-left: 25%
+    margin-left: 25%;
   }
 
   .confirm-point p {
@@ -238,6 +274,107 @@
     width: 15%;
     height: 15%;
     margin-top: 5%;
+  }
+
+  button {
+    background-color: #cd796b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 350px;
+    height: 64px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 4px;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: rgba(99, 18, 18, 1);
+    margin-top: 44%;
+    
+  }
+
+  .claim-button {
+    font-family: Irish Grover;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 29.02px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 400px;
+  }
+
+
+  .modal-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Nền mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal-content {
+    background-color: #fffbf0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Để định vị button close */
+    transform: translateY(100%);
+    animation: slideUp 0.3s ease-out forwards;
+    width: 100%;
+    height: 626px;
+    top: 27%;
+    border-radius: 10px 10px 0px 0px;
+
+  }
+
+  .modal-image {
+    width: 80%;
+    display: block;
+    margin: 95px auto 10px;
+  }
+
+  .error-text {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Irish Grover;
+  }
+
+  .error-text2 {
+    font-family: Irish Grover;
+    font-size: 39px;
+    text-align: center;
+  }
+
+  .modal-close-button {
+    position: absolute;
+    right: 28px;
+    background: none;
+    width: 0px;
+    height: 9%;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(77, 77, 77, 1);
+    bottom: 86%;
+    border-radius: 50%;
+    border: 2px solid rgba(77, 77, 77, 1);
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+    }
   }
 }
 </style>

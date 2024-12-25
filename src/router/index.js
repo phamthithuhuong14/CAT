@@ -82,10 +82,8 @@ const routes = [
     name: "RewardConfirm",
     component: () => import("../Views/RewardConfirmation.vue"),
   },
+
 ];
-
-
-
 
 
 const router = createRouter({

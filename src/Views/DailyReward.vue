@@ -27,6 +27,7 @@
       <div class="reward-box">
         <span class="reward-label">Reward:</span>
         <span class="reward-amount"> 3 </span>
+        <img src="../img/ticket-red.svg" alt="">
       </div>
       <button class="open-button">Open</button>
     </div>
@@ -41,10 +42,11 @@
     align-items: center;
     justify-content: flex-start;
     width: 700px;
-    height: 114vh;
+    height: 187vh;
     background: rgba(255, 249, 233, 1);
 
   }
+  
   .header {
     display: flex;
     justify-content: flex-start;
@@ -117,6 +119,15 @@
     display: flex;
   }
 
+  .reward-box img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 12px;
+    
+
+  }
+
   .reward-label {
     font-family: Irish Grover;
     font-size: 35px;
@@ -125,13 +136,15 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    margin-left: 44px;
+    margin-left: 18px;
     margin-top: 8%;
+    color: rgba(99, 18, 18, 1);
+
   }
 
   .reward-amount {
     font-family: Irish Grover;
-    font-size: 24px;
+    font-size: 41px;
     font-weight: 400;
     line-height: 29.02px;
     text-align: center;
@@ -139,6 +152,7 @@
     text-decoration-skip-ink: none;
     color: rgba(99, 18, 18, 1);
     margin-top: 8%;
+    margin-left: 10px;
   }
 
   button {
@@ -159,7 +173,6 @@
     border-style: solid;
     border-color: rgba(99, 18, 18, 1);
 
-
   }
 
   .open-button {
@@ -168,8 +181,7 @@
     font-weight: 400;
     line-height: 29.02px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+   margin-top: 550px;
   }
 }
 </style>

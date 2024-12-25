@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div class="main">
+      
       <div class="Time">
         <p class="time-clock">09:41</p>
         <div class="display-screen">
@@ -36,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     width: 700px;
-    height: 213vh;
+    height: 210vh;
   }
   .main {
     background: rgba(255, 249, 233, 1);
@@ -96,20 +97,26 @@
 
   .loading-bar-container {
     width: 80%;
-    height: 12px;
+    height: 22px;
     background-color: #f0ddd2;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 10px;
+    border: 1.5px solid rgba(99, 19, 19, 1);
+    background: rgba(255, 225, 186, 1);
   }
 
   .loading-bar {
     height: 100%;
-    background: rgba(255, 225, 186, 1);
     border-radius: 10px;
     transition: width 0.2s ease;
     border: 1.5px solid rgba(99, 19, 19, 1);
+    animation: progress 2s linear infinite; /* Tạo animation */
+    background: linear-gradient(180deg, #BF5828 0%, #592913 100%);
+
   }
+
+  
   .loading-text {
     color: rgba(99, 19, 19, 1);
     font-size: 32px;
@@ -117,5 +124,17 @@
     font-weight: 400;
     margin-top: 346px;
   }
+
+  @keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
+
+}
+
 </style>
+

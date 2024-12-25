@@ -25,6 +25,7 @@
     <div class="ticket-number">
       <h3 class="ticket-label">Ticket:</h3>
       <p class="ticket-amount">0</p>
+      <img src="../img/ticket.svg" alt="" />
     </div>
 
     <div class="ticket-image">
@@ -53,7 +54,7 @@
     /* align-items: center; */
     justify-content: flex-start;
     width: 700px;
-    height: 114vh;
+    height: 187vh;
     background: rgba(255, 249, 233, 1);
   }
   .header {
@@ -112,6 +113,10 @@
     line-height: 29.02px;
   }
 
+  .ticket-number img {
+    width: 5%;
+  }
+
   .ticket-image {
     margin-top: 40%;
     display: grid;
@@ -145,7 +150,7 @@
     border-radius: 20px;
     font-size: 1.1rem;
     cursor: pointer;
-    width: 300px;
+    width: 350px;
     height: 64px;
     border-top-width: 2px;
     border-right-width: 2px;
@@ -154,7 +159,7 @@
     border-style: solid;
     border-color: rgba(99, 18, 18, 1);
     margin-top: 80%;
-    margin-left: 26%;
+    margin-left: 25%;
   }
 
   .open-button {
