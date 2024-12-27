@@ -36,7 +36,7 @@
         <img src="../img/ticket-image-yellow.svg" alt="" />
       </div>
       <div class="ton">
-        <img src="../img/ton.svg" alt="" />
+        <img src="../img/Ton.svg" alt="" />
         <p>0.5 TON</p>
       </div>
     </div>
