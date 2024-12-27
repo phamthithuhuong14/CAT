@@ -1,11 +1,9 @@
 <template>
   <div class="container">
     <div class="main">
-      
       <div class="Time">
         <p class="time-clock">09:41</p>
         <div class="display-screen">
-
           <img class="wifi" src="../img/Wifi.png" alt="" />
           <img class="battery" src="../img/Battery.png" alt="" />
         </div>
@@ -30,6 +28,80 @@
 </template>
 
 <style scoped>
+.container {
+  max-width: 815px;
+  margin: 0 auto;
+  background: rgba(255, 249, 233, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 98vh;
+}
+
+main {
+  background: rgba(255, 249, 233, 1);
+  
+}
+
+.cat-image{
+  width: 400px;
+  height: 266px;
+  margin-top: 30%;
+}
+
+.cat-hi img{
+  margin-right: 50px;
+  width: 60px;
+  height: 60px;
+}
+
+.loading-text {
+    color: rgba(99, 19, 19, 1);
+    font-size: 28px;
+    font-family: Irish Grover;
+    font-weight: 400;
+    margin-top: 123px;
+    text-align: center;
+  }
+
+.loading-bar {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.2s ease;
+    border: 1.5px solid rgba(99, 19, 19, 1);
+    animation: progress 2s linear infinite; /* Tạo animation */
+    background: linear-gradient(180deg, #bf5828 0%, #592913 100%);
+  }
+
+  .loading-bar-container {
+    width: 80%;
+    height: 22px;
+    background-color: #f0ddd2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1.5px solid rgba(99, 19, 19, 1);
+    background: rgba(255, 225, 186, 1);
+  }
+
+  .loading-bar {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.2s ease;
+    border: 1.5px solid rgba(99, 19, 19, 1);
+    animation: progress 2s linear infinite; /* Tạo animation */
+    background: linear-gradient(180deg, #bf5828 0%, #592913 100%);
+  }
+
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
 @media screen and (max-width: 700px) {
   .container {
     background: rgba(255, 249, 233, 1);
@@ -112,11 +184,9 @@
     transition: width 0.2s ease;
     border: 1.5px solid rgba(99, 19, 19, 1);
     animation: progress 2s linear infinite; /* Tạo animation */
-    background: linear-gradient(180deg, #BF5828 0%, #592913 100%);
-
+    background: linear-gradient(180deg, #bf5828 0%, #592913 100%);
   }
 
-  
   .loading-text {
     color: rgba(99, 19, 19, 1);
     font-size: 32px;
@@ -126,15 +196,12 @@
   }
 
   @keyframes progress {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
   }
 }
-
-}
-
 </style>
-

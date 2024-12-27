@@ -53,7 +53,6 @@
       <button @click="showModal" class="claim-button">Claim</button>
     </div>
 
-    
     <div v-if="isModalVisible" class="modal-overlay">
       <div class="modal-content">
         <img src="../img/Cat-image.svg" alt="Sad Cat" class="modal-image" />
@@ -90,6 +89,290 @@ export default {
 </script>
 
 <style scoped>
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-start;
+  width: 700px;
+  max-width: 815px;
+  margin: 0 auto;
+  background: rgba(255, 249, 233, 1);
+  height: 98vh;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  font-size: 20px;
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgba(99, 18, 1, 1);
+  display: inline-flex;
+  justify-content: center;
+}
+
+.user-icon svg {
+  color: rgba(99, 18, 1, 1);
+  height: 26px;
+  margin-top: 4px;
+}
+
+.user-name {
+  color: rgba(99, 18, 18, 1);
+  font-family: Irish Grover;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 57px;
+  margin-left: 16px;
+  gap: 16px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-icon {
+  font-size: 20px;
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgba(99, 18, 1, 1);
+  display: inline-flex;
+  justify-content: center;
+}
+
+.user-icon svg {
+  color: rgba(99, 18, 1, 1);
+  height: 26px;
+  margin-top: 4px;
+}
+
+.user-name {
+  color: rgba(99, 18, 18, 1);
+  font-family: Irish Grover;
+  font-size: 26px;
+}
+
+.Cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.text img {
+  position: relative;
+  width: 100%;
+  height: 68px;
+  bottom: 59px;
+  left: 41%;
+  gap: 0px;
+  margin-top: 36%;
+}
+
+.text {
+  position: absolute;
+}
+
+.text p {
+  position: absolute;
+  color: #ffff;
+  font-family: Irish Grover;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24.18px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  bottom: 40%;
+  margin-left: 53%;
+}
+
+.cat-image {
+  width: 43%;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 15%;
+  margin-right: 12%;
+}
+
+.Reward p {
+  font-family: Irish Grover;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 29.02px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 6%;
+}
+
+.reward-confirm {
+  width: 34%;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 60px;
+  margin-left: 31%;
+}
+
+.confirm-point p {
+  font-family: Irish Grover;
+  font-size: 22px;
+  font-weight: 400;
+  /* line-height: 35px; */
+  text-align: center;
+}
+
+.confirm-doggy {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.confirm-doggy p {
+  font-family: Irish Grover;
+  font-size: 22px;
+  font-weight: 400;
+  /* line-height: 35px; */
+  text-align: center;
+}
+
+.confirm-doggy img {
+  width: 15%;
+  height: 15%;
+  margin-top: 5%;
+}
+
+.confirm-ton {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.confirm-ton p {
+  font-family: Irish Grover;
+  font-size: 22px;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.confirm-ton img {
+  width: 15%;
+  height: 15%;
+  margin-top: 5%;
+}
+
+button {
+  background-color: #cd796b;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  height: 64px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 4px;
+  border-left-width: 2px;
+  border-style: solid;
+  border-color: rgba(99, 18, 18, 1);
+  margin-top: 8%;
+}
+
+.claim-button {
+  font-family: Irish Grover;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 29.02px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 291px;
+}
+
+.modal-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 474px;
+  width: 689px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Nền mờ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fffbf0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Để định vị button close */
+  transform: translateY(100%);
+  animation: slideUp 0.3s ease-out forwards;
+  width: 100%;
+  height: 368px;
+  top: 27%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.modal-image {
+  width: 57%;
+  display: block;
+  margin: 95px auto 10px;
+}
+
+.error-text {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Irish Grover;
+}
+
+.error-text2 {
+  font-family: Irish Grover;
+  font-size: 27px;
+  text-align: center;
+}
+
+.modal-close-button {
+  position: absolute;
+  right: 28px;
+  background: none;
+  width: 0px;
+  height: 11%;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgba(77, 77, 77, 1);
+  bottom: 86%;
+  border-radius: 50%;
+  border: 2px solid rgba(77, 77, 77, 1);
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+}
 @media screen and (max-width: 700px) {
   .container {
     display: flex;
@@ -293,20 +576,18 @@ export default {
     border-style: solid;
     border-color: rgba(99, 18, 18, 1);
     margin-top: 44%;
-    
   }
 
   .claim-button {
     font-family: Irish Grover;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 29.02px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        width: 400px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 29.02px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 400px;
   }
-
 
   .modal-overlay {
     position: fixed;
@@ -332,7 +613,6 @@ export default {
     height: 626px;
     top: 27%;
     border-radius: 10px 10px 0px 0px;
-
   }
 
   .modal-image {
@@ -368,7 +648,6 @@ export default {
     border: 2px solid rgba(77, 77, 77, 1);
     display: flex;
     justify-content: center;
-    
   }
 
   @keyframes slideUp {

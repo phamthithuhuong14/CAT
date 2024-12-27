@@ -41,6 +41,108 @@
 </template>
 
 <style scoped>
+
+.daily-reward-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-start;
+  width: 700px;
+
+  max-width: 815px;
+  margin: 0 auto;
+  background: rgba(255, 249, 233, 1);
+
+  height: 98vh;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    margin-top: 57px;
+    margin-left: 16px;
+    gap: 16px;
+  }
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  .user-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(99, 18, 1, 1);
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .user-icon svg {
+    color: rgba(99, 18, 1, 1);
+    height: 26px;
+    margin-top: 4px;
+  }
+
+  .user-name {
+    color: rgba(99, 18, 18, 1);
+    font-family: Irish Grover;
+    font-size: 26px;
+  }
+
+  .ticket-number {
+    display: flex;
+    gap: 16px;
+    margin-left: 16px;
+  }
+
+  .ticket-label {
+    font-family: Irish Grover;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 29.02px;
+    text-align: left;
+  }
+
+  .ticket-amount {
+    font-family: Irish Grover;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 29.02px;
+  }
+
+  .ticket-number img {
+    width: 4%;
+  }
+
+  .ticket-point {
+    display: flex;
+    margin-top: 30%;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .ticket-point img {
+    width: 128px;
+    height: 118px;
+  }
+
+  .Vector {
+    position: relative;
+    
+  }
+
+  .point-circle {
+    position: absolute;
+    font-family: Irish Grover;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 13px;
+  }
 @media screen and (max-width: 700px) {
   .daily-reward-container {
     display: flex;

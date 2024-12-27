@@ -35,6 +35,148 @@
 </template>
 
 <style scoped>
+
+.daily-reward-container {
+
+  max-width: 815px;
+  margin: 0 auto;
+  background: rgba(255, 249, 233, 1);
+  display: flex;
+  flex-direction: column;
+
+  height: 98vh;
+}
+
+.user-icon {
+  font-size: 20px;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(99, 18, 1, 1);
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.user-icon svg {
+    color: rgba(99, 18, 1, 1);
+    height: 26px;
+    margin-top: 4px;
+  }
+
+  .user-name {
+    color: rgba(99, 18, 18, 1);
+    font-family: Irish Grover;
+    font-size: 26px;
+  }
+
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .day-number {
+    font-size: 120px;
+    font-weight: 400;
+    font-family: Irish Grover;
+    color: rgba(99, 18, 18, 1);
+    margin: 0;
+  }
+
+  .day-label {
+    font-size: 40px;
+    color: rgba(99, 18, 18, 1);
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-family: Irish Grover;
+    font-weight: 400;
+  }
+
+  .reward-box {
+    padding: 10px 20px;
+    border-radius: 60px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: 232px;
+    height: 60px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-left-width: 1px;
+    border-style: solid;
+    border-color: rgba(41, 9, 9, 1);
+    display: flex;
+  }
+
+  .reward-box img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 12px;
+    
+
+  }
+
+  .reward-label {
+    font-family: Irish Grover;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 29.02px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-left: 18px;
+    margin-top: 8%;
+    color: rgba(99, 18, 18, 1);
+
+  }
+
+  .reward-amount {
+    font-family: Irish Grover;
+    font-size: 41px;
+    font-weight: 400;
+    line-height: 29.02px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(99, 18, 18, 1);
+    margin-top: 8%;
+    margin-left: 10px;
+  }
+
+  button {
+    background-color: #cd796b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 300px;
+    height: 64px;
+    margin-top: 224px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 4px;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: rgba(99, 18, 18, 1);
+
+  }
+
+  .open-button {
+    font-family: Irish Grover;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 29.02px;
+    text-align: center;
+   margin-top: 188px;
+  }
 @media screen and (max-width:700px) {
   .daily-reward-container {
     display: flex;
