@@ -196,7 +196,7 @@ export default {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  bottom: 40%;
+  /* bottom: 40%; */
   margin-left: 53%;
 }
 
@@ -293,7 +293,7 @@ button {
   border-left-width: 2px;
   border-style: solid;
   border-color: rgba(99, 18, 18, 1);
-  margin-top: 8%;
+  margin-top: 300px;
 }
 
 .claim-button {
@@ -373,6 +373,7 @@ button {
     transform: translateY(0);
   }
 }
+
 @media screen and (max-width: 700px) {
   .container {
     display: flex;
@@ -500,7 +501,7 @@ button {
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    margin-top: 20%;
+    margin-top: 15%;
   }
 
   .reward-confirm {
@@ -575,7 +576,8 @@ button {
     border-left-width: 2px;
     border-style: solid;
     border-color: rgba(99, 18, 18, 1);
-    margin-top: 44%;
+    margin-top: 18%;
+    margin-left: -14px;
   }
 
   .claim-button {

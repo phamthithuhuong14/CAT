@@ -37,18 +37,18 @@ const routes = [
     component: () => import("../Views/TicketPoint.vue"),
   },
   {
-    path: "/reward",
+    path: "/ticketreward",
     name: "TicketReward",
     component: () => import("../Views/TicketReward.vue"),
   },
   {
-    path: "/lucky",
+    path: "/ticketlucky",
     name: "TicketLucky",
     component: () => import("../Views/TicketLucky.vue"),
   },
 
   {
-    path: "/doggy",
+    path: "/doggylucky",
     name: "DoggyLucky",
     component: () => import("../Views/DoggyLucky.vue"),
   },

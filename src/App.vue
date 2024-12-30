@@ -36,9 +36,9 @@ import RewardConfirmation from "./Views/RewardConfirmation.vue";
     <router-link to="/daily"></router-link> 
     <router-link to="/ticketinventory"></router-link> 
     <router-link to="/ticketpoint"></router-link> 
-    <router-link to="/reward"></router-link> 
-    <router-link to="/lucky"></router-link>
-    <router-link to="/doggy"></router-link>
+    <router-link to="/ticketreward"></router-link> 
+    <router-link to="/ticketlucky"></router-link>
+    <router-link to="/doggylucky"></router-link>
     <router-link to="/dogsreward"></router-link>
     <router-link to="/catbags"></router-link>
     <router-link to="/tonreward"></router-link>

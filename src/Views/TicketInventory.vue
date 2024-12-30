@@ -43,12 +43,10 @@
   /* align-items: center; */
   justify-content: flex-start;
   width: 700px;
-
   max-width: 815px;
   margin: 0 auto;
   background: rgba(255, 249, 233, 1);
-
-  height: 98vh;
+  height: auto;
 }
 
 .header {
@@ -59,10 +57,12 @@
   margin-left: 16px;
   gap: 16px;
 }
+
 .user-info {
   display: flex;
   align-items: center;
 }
+
 .user-icon {
   font-size: 20px;
   margin-right: 5px;
@@ -124,6 +124,7 @@
   width: 128px;
   height: 118px;
 }
+
 @media screen and (max-width: 700px) {
   .daily-reward-container {
     display: flex;
@@ -142,10 +143,12 @@
     margin-left: 16px;
     gap: 16px;
   }
+
   .user-info {
     display: flex;
     align-items: center;
   }
+  
   .user-icon {
     font-size: 20px;
     margin-right: 5px;
@@ -196,7 +199,6 @@
 
   .ticket-image {
     margin-top: 40%;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 1%;

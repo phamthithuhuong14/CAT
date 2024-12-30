@@ -263,7 +263,7 @@
 
   .ticket-point {
     display: flex;
-    margin-top: 200px;
+    margin-top: 30%;
     justify-content: center;
     gap: 16px;
   }
@@ -297,8 +297,8 @@
     border-radius: 20px;
     font-size: 1.1rem;
     cursor: pointer;
-    width: 300px;
-    height: 64px;
+    width: 385px;
+    height: 80px;
     margin-top: 224px;
     border-top-width: 2px;
     border-right-width: 2px;
@@ -306,12 +306,12 @@
     border-left-width: 2px;
     border-style: solid;
     border-color: rgba(99, 18, 18, 1);
-    margin-top: 80%;
+    margin-top: 54%;
   }
 
   .open-button {
     font-family: Irish Grover;
-    font-size: 32px;
+    font-size: 43px;
     font-weight: 400;
     line-height: 29.02px;
     text-align: center;

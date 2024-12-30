@@ -129,11 +129,11 @@
   width: 81%;
   height: 130px;
 }
-
+/* 
 .ticket-image img {
   width: 100.28px;
   height: 131px;
-}
+} */
 
 .ton img {
   width: 128px;
@@ -249,24 +249,14 @@ button {
     margin-top: 40%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 1%;
-    width: 100%;
+    margin-left: 13%;
+    width: 77%;
     height: 130px;
-  }
-
-  .ticket-image img {
-    width: 100.28px;
-    height: 131px;
-  }
-
-  .ton img {
-    width: 214px;
-    height: 174px;
   }
 
   .ton p {
     font-family: Irish Grover;
-    margin-left: 27%;
+    margin-left: 10%;
     font-size: 25px;
   }
 
@@ -286,7 +276,7 @@ button {
     border-left-width: 2px;
     border-style: solid;
     border-color: rgba(99, 18, 18, 1);
-    margin-top: 80%;
+    margin-top: 58%;
     margin-left: 25%;
   }
 

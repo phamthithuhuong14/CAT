@@ -58,6 +58,7 @@
     justify-content: center;
     margin-top: 50px;
     margin-left: 20px;
+    margin-top: 0%;
 }
 
 .user-icon svg {

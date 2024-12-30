@@ -160,7 +160,7 @@ button {
   border: none;
   padding: 12px 30px;
   border-radius: 20px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
   width: 300px;
   height: 64px;
@@ -182,6 +182,7 @@ button {
   text-align: center;
   margin-top: 300px;
 }
+
 @media screen and (max-width: 700px) {
   .daily-reward-container {
     display: flex;
@@ -260,7 +261,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 30%;
+    margin-top: 20%;
   }
 
   .doggy-image {
@@ -292,7 +293,7 @@ button {
     border: none;
     padding: 12px 30px;
     border-radius: 20px;
-    font-size: 1.1rem;
+    
     cursor: pointer;
     width: 300px;
     height: 64px;
@@ -312,7 +313,7 @@ button {
     font-weight: 400;
     line-height: 29.02px;
     text-align: center;
-    margin-top: 300px;
+    
   }
 }
 </style>

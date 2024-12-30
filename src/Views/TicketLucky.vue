@@ -45,7 +45,7 @@
   justify-content: flex-start;
   width: 700px;
 
-  max-width: 815px;
+  max-width: 700px;
   margin: 0 auto;
   background: rgba(255, 249, 233, 1);
 
@@ -185,7 +185,7 @@
     font-family: Irish Grover;
     font-size: 35px;
     font-weight: 400;
-    line-height: 29.02px;
+    line-height: 29px;
     text-align: left;
   }
 
@@ -201,8 +201,7 @@
   }
 
   .ticket-image {
-    margin-top: 200px;
-
+    margin-top: 40%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 3%;
