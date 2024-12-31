@@ -29,21 +29,29 @@
         <span class="reward-amount"> 3 </span>
         <img src="../img/ticket-red.svg" alt="">
       </div>
-      <button class="open-button">Open</button>
+      <button class="open-button" @click="goToTicketInventory">Open</button>
     </div>
   </div>
 </template>
 
+<script>
+  export default {
+    methods: {
+      goToTicketInventory() {
+        this.$router.push('/ticketinventory')
+      }
+    }
+  }
+</script>
+
 <style scoped>
 
 .daily-reward-container {
-
   max-width: 815px;
   margin: 0 auto;
   background: rgba(255, 249, 233, 1);
   display: flex;
   flex-direction: column;
-
   height: 98vh;
 }
 

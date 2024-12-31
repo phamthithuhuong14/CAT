@@ -218,7 +218,7 @@ main {
     font-family: Irish Grover;
     font-weight: 400;
     margin-top: 346px;
-    animation: bounce 1s infinite;
+    
   }
 
   @keyframes progress {
