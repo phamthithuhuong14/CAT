@@ -21,11 +21,35 @@
       </div>
 
       <div class="loading-bar-container">
-        <div class="loading-bar"></div>
+        <div class="loading-bar" ></div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+        loadingProgress: 0
+      }
+    },
+    methods: {
+      updateLoadingProgress () {
+        if(this.loadingProgress < 100) {
+          this.loadingProgress += 1
+          setTimeout(this.updateLoadingProgress, 20)
+        }else {
+          this.$router.push('/daily')
+        }
+      }
+    },
+    mounted () {
+      this.updateLoadingProgress()
+    }
+  }
+</script>
+
 
 <style scoped>
 .container {
@@ -91,6 +115,7 @@ main {
     border: 1.5px solid rgba(99, 19, 19, 1);
     animation: progress 2s linear infinite; /* Tạo animation */
     background: linear-gradient(180deg, #bf5828 0%, #592913 100%);
+    transition: width 0.3s ease;
   }
 
   @keyframes progress {
