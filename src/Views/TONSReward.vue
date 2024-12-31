@@ -38,7 +38,7 @@
         <p>0.2 TON</p>
       </div>
       <div class="ton">
-        <img src="../img/ton.svg" alt="" />
+        <img src="../img/Ton.svg" alt="" />
         <p>0.5 TON</p>
       </div>
     </div>
@@ -276,7 +276,7 @@ button {
     border-left-width: 2px;
     border-style: solid;
     border-color: rgba(99, 18, 18, 1);
-    margin-top: 58%;
+    margin-top: 62%;
     margin-left: 25%;
   }
 
