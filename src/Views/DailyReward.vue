@@ -230,7 +230,7 @@
   }
 
   .day-number {
-    font-size: 120px;
+    font-size: 177px;
     font-weight: 400;
     font-family: Irish Grover;
     color: rgba(99, 18, 18, 1);
@@ -238,7 +238,7 @@
   }
 
   .day-label {
-    font-size: 40px;
+    font-size: 68px;
     color: rgba(99, 18, 18, 1);
     margin: 0;
     margin-bottom: 1.5rem;
@@ -268,7 +268,6 @@
     margin-left: 5px;
     margin-top: 12px;
     
-
   }
 
   .reward-label {
@@ -308,7 +307,6 @@
     cursor: pointer;
     width: 300px;
     height: 64px;
-    margin-top: 224px;
     border-top-width: 2px;
     border-right-width: 2px;
     border-bottom-width: 4px;
@@ -324,7 +322,7 @@
     font-weight: 400;
     line-height: 29.02px;
     text-align: center;
-   margin-top: 550px;
+    margin-top: 392px;
   }
 }
 </style>
